@@ -37,3 +37,31 @@ function sendNotification(email) {
 
 let result1 = sendNotification("nadim.naem5@outlook.com");
 // console.log(result1);
+
+
+//problem--3
+
+let str = "Raj123";
+
+function checkDigitsInName(name) {
+    let type = typeof(name);
+
+    if (type !== "string") {
+        return "Invalid Input";
+    } else {
+
+        for (let n of name) {
+            let c = "";
+            if (typeof(n) == "string") {
+                c = c + n;
+
+            }
+            console.log(c);
+
+        }
+
+    }
+}
+
+let result2 = checkDigitsInName(str);
+console.log(result2);
